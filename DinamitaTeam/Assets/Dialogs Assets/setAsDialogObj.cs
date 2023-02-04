@@ -25,7 +25,7 @@ public class setAsDialogObj : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             GlobalStore.onDialog = true;
-            GlobalStore.ActiveDialog = collision.gameObject.GetComponent<setAsDialogObj>().dialog;
+            //GlobalStore.ActiveDialog = collision.gameObject.GetComponent<setAsDialogObj>().dialog;
             Debug.Log(GlobalStore.ActiveDialog);
         }
     }

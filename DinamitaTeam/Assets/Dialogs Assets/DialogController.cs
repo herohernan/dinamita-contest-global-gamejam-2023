@@ -19,13 +19,13 @@ public class DialogController : MonoBehaviour
     {
         if (GlobalStore.onDialog)
         {
-            if(this.onShowingDialogs != GlobalStore.ActiveDialog)
+            /*if(this.onShowingDialogs != GlobalStore.ActiveDialog)
             {
                 this.onShowingDialogs = GlobalStore.ActiveDialog;
                 this.dialogToShow = 0;
                 this.dialogText.text = this.onShowingDialogs[this.dialogToShow];
                 this.dialogToShow += 1;
-            }
+            }*/
 
 
             if (Input.GetKeyDown(KeyCode.Space) && this.dialogToShow <= this.onShowingDialogs.Count)
