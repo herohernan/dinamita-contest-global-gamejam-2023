@@ -7,7 +7,7 @@ public class CameraFollower : MonoBehaviour
 {
     [SerializeField] public Transform target;
     public Vector3 offset = new Vector3(0.0f, 0.0f, -10.0f);
-    public float smoothTime = 0.25f;
+    public float smoothTime = 0.1f;
 
     // Start is called before the first frame update
     void Start()

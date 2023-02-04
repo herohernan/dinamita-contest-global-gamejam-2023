@@ -4,51 +4,41 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float xVelocity = 10.0f;
+    public float xVelocity = 5.0f;
 
     private Rigidbody2D rigidBody;
+    private Animator animator;
+    private bool IsInMovement;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidBody = this.gameObject.GetComponent<Rigidbody2D>();
+        animator = this.gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Option #1
-        /*Vector3 translation = new Vector3();
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            translation = new Vector3(xVelocity * Time.deltaTime, 0.0f, 0.0f);
-            transform.Translate(translation);
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            translation = new Vector3(-xVelocity * Time.deltaTime, 0.0f, 0.0f);
-            transform.Translate(translation);
-        }*/
-
-        // Option #2
-        /*var xAxis = Input.GetAxis("Horizontal");
-        transform.Translate(xAxis * xVelocity * Time.deltaTime, 0.0f, 0.0f);*/
-
-        // Option #3
         Vector3 translation = new Vector3();
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) && IsInMovement==false)
         {
             translation = new Vector3(xVelocity, 0.0f, 0.0f);
-            rigidBody.AddForce(translation);
+            transform.eulerAngles = new Vector2(0, 0);
+            animator.SetBool("Walking",true);
+            rigidBody.velocity = translation;
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow) && IsInMovement == false)
         {
             translation = new Vector3(-xVelocity, 0.0f, 0.0f);
-            rigidBody.AddForce(translation);
+            transform.eulerAngles = new Vector2(0, 180);
+            animator.SetBool("Walking", true);
+            rigidBody.velocity = translation;
         }
         else
         {
             translation = Vector3.zero;
+            animator.SetBool("Walking", false);
             rigidBody.velocity = translation;
         }
     }
