@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class setAsDialogObj : MonoBehaviour
 {
-    public string dialog;
+    public List<string> dialog;
     // Start is called before the first frame update
     void Start()
     {
