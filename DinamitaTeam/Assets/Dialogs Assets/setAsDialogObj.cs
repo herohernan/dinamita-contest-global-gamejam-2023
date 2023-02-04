@@ -20,7 +20,7 @@ public class setAsDialogObj : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name);
+        Debug.Log(collision.gameObject.tag);
         //&& Input.GetButtonDown("Fire 1")
         if (collision.gameObject.tag == "Player")
         {
