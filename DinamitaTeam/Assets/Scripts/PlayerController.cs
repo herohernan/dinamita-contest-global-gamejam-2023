@@ -41,10 +41,15 @@ public class PlayerController : MonoBehaviour
             translation = new Vector3(xVelocity, 0.0f, 0.0f);
             rigidBody.AddForce(translation);
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow))
         {
             translation = new Vector3(-xVelocity, 0.0f, 0.0f);
             rigidBody.AddForce(translation);
+        }
+        else
+        {
+            translation = Vector3.zero;
+            rigidBody.velocity = translation;
         }
     }
 }
