@@ -18,23 +18,25 @@ public class setAsDialogObj : MonoBehaviour
         
         
     }
-    private void OnTriggerStay2D(Collider2D collision)
+
+    private void OnTriggerStay2D(Collider2D other)
     {
-        Debug.Log(collision.gameObject.tag);
-        //&& Input.GetButtonDown("Fire 1")
-        if (collision.gameObject.tag == "Player")
+        Debug.Log("every frame");
+        //&& 
+        if (Input.GetKeyDown(KeyCode.Space) && other.gameObject.tag == "Player")
         {
             GlobalStore.onDialog = true;
-            GlobalStore.ActiveDialog = collision.gameObject.GetComponent<setAsDialogObj>().dialog;
-            Debug.Log(GlobalStore.ActiveDialog);
+            GlobalStore.ActiveDialog = this.dialog;
+            Debug.Log(GlobalStore.ActiveDialog[0]);
         }
-    }
+
+    }    
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             GlobalStore.onDialog = false;
-            GlobalStore.ActiveDialog = "";
+            GlobalStore.ActiveDialog = new List<string> { };
         }
     }
    

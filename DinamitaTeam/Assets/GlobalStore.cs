@@ -5,20 +5,10 @@ using UnityEngine;
 public class GlobalStore : MonoBehaviour
 {
     public static bool onDialog = false;
+    public static List<string> ActiveDialog = new List<string> {""};
 
-
-    public static string activeDialog;
-    public static string ActiveDialog
+    private void Update()
     {
-        get
-        {
-            return activeDialog;
-        }
-        set
-        {
-            Debug.Log("ActiveDialog: " + value);
-            ActiveDialog = value;
-        }
+        Debug.Log(onDialog);
     }
-
 }
