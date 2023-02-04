@@ -6,9 +6,4 @@ public class GlobalStore : MonoBehaviour
 {
     public static bool onDialog = false;
     public static List<string> ActiveDialog = new List<string> {""};
-
-    private void Update()
-    {
-        Debug.Log(onDialog);
-    }
 }
