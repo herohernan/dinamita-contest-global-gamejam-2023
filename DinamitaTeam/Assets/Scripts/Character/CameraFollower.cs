@@ -19,7 +19,7 @@ public class CameraFollower : MonoBehaviour
     void Update()
     {
         var currentVelocityRef = Vector3.zero;
-        var targetPosition = target.position + offset;
+        var targetPosition = new Vector3(target.position.x, 0.0f, 0.0f) + offset;
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref currentVelocityRef, smoothTime);
     }
 }
