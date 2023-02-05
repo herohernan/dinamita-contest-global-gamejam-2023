@@ -326,7 +326,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.062000003, y: 0.11472135}
   m_AnchorMax: {x: 0.94046146, y: 0.9127596}
-  m_AnchoredPosition: {x: -1.500061, y: -1.9999886}
+  m_AnchoredPosition: {x: -1.500061, y: -1.9999847}
   m_SizeDelta: {x: 0.20281982, y: -2.3247986}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &240997354
@@ -376,7 +376,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.85
+  m_fontSize: 86.95
   m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -504,6 +504,8 @@ MonoBehaviour:
   - z
   - w
   DialogTextObj: {fileID: 240997354}
+  isTeleportItem: 0
+  sceneName: 
 --- !u!212 &283741958
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1092,6 +1094,8 @@ MonoBehaviour:
   - "Tiene que existir una forma, de devolver lo que robamos, no dejar\xE9 que nuestra
     avaricia sea nuestra perdici\xF3n; "
   DialogTextObj: {fileID: 240997354}
+  isTeleportItem: 1
+  sceneName: CreditsScene
 --- !u!1 &1411431979
 GameObject:
   m_ObjectHideFlags: 0

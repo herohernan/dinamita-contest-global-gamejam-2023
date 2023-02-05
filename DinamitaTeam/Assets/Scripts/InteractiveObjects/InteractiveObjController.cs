@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine;
 
@@ -7,6 +8,8 @@ public class InteractiveObjController : MonoBehaviour
 {
     public List<string> dialog;
     public TextMeshProUGUI DialogTextObj;
+    public bool isTeleportItem;
+    public string sceneName;
 
     private int nextText = 0;
     private bool IsTriggering = false;
@@ -39,6 +42,10 @@ public class InteractiveObjController : MonoBehaviour
             {
                 DialogTextObj.text = "";
                 nextText=0;
+                if (isTeleportItem)
+                {
+                    SceneManager.LoadScene(sceneName);
+                }
             }
         }
     }
