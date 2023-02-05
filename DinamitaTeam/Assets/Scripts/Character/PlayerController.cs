@@ -59,13 +59,11 @@ public class PlayerController : MonoBehaviour
         // Sound
         if(WasWaling == false && IsWalking == true)
         {
-            Debug.Log("PLAY");
             WasWaling = true;
             StepsSoundFx.SendMessage("PlayStepsSounds");
         }
         else if(WasWaling == true && IsWalking == false)
-        {
-            Debug.Log("STOP");
+        {  
             WasWaling = false;
             StepsSoundFx.SendMessage("StopStepsSounds");
         }
