@@ -34,6 +34,9 @@ public class LetterTextController : MonoBehaviour
         {
             SceneManager.LoadScene(nextScene);
         }
-        LetterTextObj.text = LetterTextsList[textToShow];
+        else
+        {
+            LetterTextObj.text = LetterTextsList[textToShow];
+        }
     }
 }

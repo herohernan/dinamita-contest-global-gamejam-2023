@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     {
         rigidBody = this.gameObject.GetComponent<Rigidbody2D>();
         animator = this.gameObject.GetComponent<Animator>();
+        this.gameObject.tag = "Player";
     }
 
     // Update is called once per frame
