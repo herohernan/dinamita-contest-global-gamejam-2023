@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine;
+using Unity.VisualScripting;
 
 public class InteractiveObjController : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class InteractiveObjController : MonoBehaviour
     public TextMeshProUGUI DialogTextObj;
     public bool isTeleportItem;
     public string sceneName;
+    public GameObject player; 
 
     private int nextText = 0;
     private bool IsTriggering = false;
@@ -51,6 +53,7 @@ public class InteractiveObjController : MonoBehaviour
                 if (isTeleportItem)
                 {
                     SceneManager.LoadScene(sceneName);
+                    GlobalStore.PlayerPosition = new Vector2(player.transform.position.x, player.transform.position.y);
                 }
             }
         }

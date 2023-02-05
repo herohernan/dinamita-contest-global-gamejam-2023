@@ -377,7 +377,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22.7
+  m_fontSize: 30
   m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -594,7 +594,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -765,6 +765,7 @@ MonoBehaviour:
   DialogTextObj: {fileID: 240997354}
   isTeleportItem: 0
   sceneName: 
+  player: {fileID: 0}
 --- !u!212 &654630123
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1094,7 +1095,8 @@ MonoBehaviour:
     avaricia sea nuestra perdici\xF3n"
   DialogTextObj: {fileID: 240997354}
   isTeleportItem: 1
-  sceneName: xxxxx
+  sceneName: Level2Scene
+  player: {fileID: 540487393}
 --- !u!1 &1411431979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1378,6 +1380,7 @@ MonoBehaviour:
   DialogTextObj: {fileID: 240997354}
   isTeleportItem: 0
   sceneName: 
+  player: {fileID: 0}
 --- !u!212 &1620240244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3740,6 +3743,7 @@ MonoBehaviour:
   DialogTextObj: {fileID: 240997354}
   isTeleportItem: 0
   sceneName: 
+  player: {fileID: 0}
 --- !u!212 &1922791122
 SpriteRenderer:
   m_ObjectHideFlags: 0

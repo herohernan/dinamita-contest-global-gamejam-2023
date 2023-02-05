@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,8 +10,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rigidBody;
     private Animator animator;
-    private bool IsInMovement;
-
+    
     // Start is called before the first frame update
     void Start()
     {
