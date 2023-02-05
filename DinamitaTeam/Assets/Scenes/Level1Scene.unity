@@ -349,7 +349,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mueve las flechas para jugar y la tecla espacio para interactuar
+  m_text: 'Controles: Mueve las flechas para jugar y la tecla espacio para interactuar.
+    \nObjetivo: Encuentra pistas sobre el paradero de tu abuelo'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dba70ba0a9e656845b0078ae47c76214, type: 2}
   m_sharedMaterial: {fileID: -1105335241847791419, guid: dba70ba0a9e656845b0078ae47c76214, type: 2}
@@ -376,7 +377,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.65
+  m_fontSize: 22.7
   m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -412,7 +413,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -27.785004, y: 0, z: -35.72351, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -760,7 +761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-  - "Mi primo Camilo se sab\xEDa todos los Diomedazos;"
+  - "Mi primo Camilo se sab\xEDa todos los Diomedazos"
   DialogTextObj: {fileID: 240997354}
   isTeleportItem: 0
   sceneName: 
@@ -1084,16 +1085,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-  - "Bit\xE1cora de Ram\xF3n Mape, entrada 274;"
+  - "Bit\xE1cora de Ram\xF3n Mape, entrada 274"
   - "La Familia Mape fue maldecida siglos atr\xE1s por algunas culturas ind\xEDgenas
-    y sus Dioses antiguos;"
+    y sus Dioses antiguos"
   - "Mi linaje coloniz\xF3 pueblos ind\xEDgenas, rob\xE1ndoles sus posesiones valiosas.
-    No nos import\xF3 tomar su cultura y sus ra\xEDces para alimentar nuestra vanidad; "
+    No nos import\xF3 tomar su cultura y sus ra\xEDces para alimentar nuestra vanidad"
   - "Tiene que existir una forma, de devolver lo que robamos, no dejar\xE9 que nuestra
-    avaricia sea nuestra perdici\xF3n;"
+    avaricia sea nuestra perdici\xF3n"
   DialogTextObj: {fileID: 240997354}
   isTeleportItem: 1
-  sceneName: Level2Scene
+  sceneName: xxxxx
 --- !u!1 &1411431979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,7 +1374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
   - "El hermano de mi abuelo, Sebasti\xE1n, le ped\xEDa a su esposa lasa\xF1a todos
-    los domingos en estos platos;"
+    los domingos en estos platos"
   DialogTextObj: {fileID: 240997354}
   isTeleportItem: 0
   sceneName: 
@@ -3735,7 +3736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
   - "El arma del t\xEDo Diego, era como su pa\xF1uelo iba a todas partes con ella,
-    era un poco aterrador;"
+    era un poco aterrador"
   DialogTextObj: {fileID: 240997354}
   isTeleportItem: 0
   sceneName: 

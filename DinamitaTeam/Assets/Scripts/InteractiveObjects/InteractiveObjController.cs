@@ -13,12 +13,11 @@ public class InteractiveObjController : MonoBehaviour
 
     private int nextText = 0;
     private bool IsTriggering = false;
-    private string defaulText = "";
 
-    // Start is called before the first frame update
-    void Start()
+    // On trigger Enter
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        defaulText = DialogTextObj.text;
+        DialogTextObj.text = "";
     }
 
     // On trigger Stay
@@ -30,7 +29,7 @@ public class InteractiveObjController : MonoBehaviour
     // On trigger Exit
     private void OnTriggerExit2D(Collider2D collision)
     {
-        DialogTextObj.text = defaulText;
+        DialogTextObj.text = "";
         IsTriggering = false;
         nextText = 0;
     }
