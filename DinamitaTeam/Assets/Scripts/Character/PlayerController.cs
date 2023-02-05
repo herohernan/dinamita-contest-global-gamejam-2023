@@ -15,20 +15,21 @@ public class PlayerController : MonoBehaviour
     {
         rigidBody = this.gameObject.GetComponent<Rigidbody2D>();
         animator = this.gameObject.GetComponent<Animator>();
+        this.gameObject.tag = "Player";
     }
 
     // Update is called once per frame
     void Update()
     {
         Vector3 translation = new Vector3();
-        if (Input.GetKey(KeyCode.RightArrow) && IsInMovement==false)
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             translation = new Vector3(xVelocity, 0.0f, 0.0f);
             transform.eulerAngles = new Vector2(0, 0);
             animator.SetBool("Walking",true);
             rigidBody.velocity = translation;
         }
-        else if (Input.GetKey(KeyCode.LeftArrow) && IsInMovement == false)
+        else if (Input.GetKey(KeyCode.LeftArrow))
         {
             translation = new Vector3(-xVelocity, 0.0f, 0.0f);
             transform.eulerAngles = new Vector2(0, 180);
