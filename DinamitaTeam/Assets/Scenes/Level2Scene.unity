@@ -449,8 +449,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420732614}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -106, y: 0, z: -8}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -8}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -458,8 +458,8 @@ Transform:
   - {fileID: 1922791119}
   - {fileID: 1620240241}
   - {fileID: 654630120}
-  m_Father: {fileID: 1954777550}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &522057856
 GameObject:
@@ -486,7 +486,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522057856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.8, y: 0, z: 0}
+  m_LocalPosition: {x: -117.47, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -613,7 +613,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 540487393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.3, y: -4.25, z: -8}
+  m_LocalPosition: {x: -108.6, y: -4.25, z: -8}
   m_LocalScale: {x: 3.5, y: 3.5, z: 0.23333333}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -633,7 +633,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0031184405, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -644,7 +644,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.86902297, y: 1}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!50 &540487398
 Rigidbody2D:
@@ -760,10 +760,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-  - "Mi primo Camilo se sab\xEDa todos los Diomedazos;"
+  - "Bit\xE1cora de Ram\xF3n Mape, entrada 274; "
+  - "Finalmente lo hab\xEDa entendido. Desde las ra\xEDces Por generaciones la familia
+    Mape ha sido v\xEDctima de esta extra\xF1a maldici\xF3n; "
+  - "Siglos atr\xE1s, mi linaje coloniz\xF3 pueblos ind\xEDgenas, llevando consigo
+    lo que consideraban valioso. Los habitantes de los pueblos y sus Dioses antiguos,
+    nos hicieron esto; "
+  - "Tiene que existir una forma, de devolver lo que robamos, no dejar\xE9 que nuestra
+    avaricia sea nuestra perdici\xF3n; "
   DialogTextObj: {fileID: 240997354}
-  isTeleportItem: 0
-  sceneName: 
+  isTeleportItem: 1
+  sceneName: CreditsScene
 --- !u!212 &654630123
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -949,15 +956,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150407383}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -106, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 522057857}
   - {fileID: 1835191794}
-  m_Father: {fileID: 1954777550}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1340044388
 GameObject:
@@ -1084,16 +1091,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-  - "Bit\xE1cora de Ram\xF3n Mape, entrada 274;"
-  - "La Familia Mape fue maldecida siglos atr\xE1s por algunas culturas ind\xEDgenas
-    y sus Dioses antiguos;"
-  - "Mi linaje coloniz\xF3 pueblos ind\xEDgenas, rob\xE1ndoles sus posesiones valiosas.
-    No nos import\xF3 tomar su cultura y sus ra\xEDces para alimentar nuestra vanidad; "
+  - "Bit\xE1cora de Ram\xF3n Mape, entrada 274; "
+  - "Finalmente lo hab\xEDa entendido. Desde las ra\xEDces Por generaciones la familia
+    Mape ha sido v\xEDctima de esta extra\xF1a maldici\xF3n; "
+  - "Siglos atr\xE1s, mi linaje coloniz\xF3 pueblos ind\xEDgenas, llevando consigo
+    lo que consideraban valioso. Los habitantes de los pueblos y sus Dioses antiguos,
+    nos hicieron esto; "
   - "Tiene que existir una forma, de devolver lo que robamos, no dejar\xE9 que nuestra
-    avaricia sea nuestra perdici\xF3n;"
+    avaricia sea nuestra perdici\xF3n; "
   DialogTextObj: {fileID: 240997354}
   isTeleportItem: 1
-  sceneName: Level2Scene
+  sceneName: CreditsScene
 --- !u!1 &1411431979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1372,11 +1380,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-  - "El hermano de mi abuelo, Sebasti\xE1n, le ped\xEDa a su esposa lasa\xF1a todos
-    los domingos en estos platos;"
+  - "Bit\xE1cora de Ram\xF3n Mape, entrada 274; "
+  - "Finalmente lo hab\xEDa entendido. Desde las ra\xEDces Por generaciones la familia
+    Mape ha sido v\xEDctima de esta extra\xF1a maldici\xF3n; "
+  - "Siglos atr\xE1s, mi linaje coloniz\xF3 pueblos ind\xEDgenas, llevando consigo
+    lo que consideraban valioso. Los habitantes de los pueblos y sus Dioses antiguos,
+    nos hicieron esto; "
+  - "Tiene que existir una forma, de devolver lo que robamos, no dejar\xE9 que nuestra
+    avaricia sea nuestra perdici\xF3n; "
   DialogTextObj: {fileID: 240997354}
-  isTeleportItem: 0
-  sceneName: 
+  isTeleportItem: 1
+  sceneName: CreditsScene
 --- !u!212 &1620240244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3628,7 +3642,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835191793}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 121.9, y: 0, z: 0}
+  m_LocalPosition: {x: 15.7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3734,11 +3748,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-  - "El arma del t\xEDo Diego, era como su pa\xF1uelo iba a todas partes con ella,
-    era un poco aterrador;"
+  - "Bit\xE1cora de Ram\xF3n Mape, entrada 274; "
+  - "Finalmente lo hab\xEDa entendido. Desde las ra\xEDces Por generaciones la familia
+    Mape ha sido v\xEDctima de esta extra\xF1a maldici\xF3n; "
+  - "Siglos atr\xE1s, mi linaje coloniz\xF3 pueblos ind\xEDgenas, llevando consigo
+    lo que consideraban valioso. Los habitantes de los pueblos y sus Dioses antiguos,
+    nos hicieron esto; "
+  - "Tiene que existir una forma, de devolver lo que robamos, no dejar\xE9 que nuestra
+    avaricia sea nuestra perdici\xF3n; "
   DialogTextObj: {fileID: 240997354}
-  isTeleportItem: 0
-  sceneName: 
+  isTeleportItem: 1
+  sceneName: CreditsScene
 --- !u!212 &1922791122
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3833,8 +3853,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1800938765}
-  - {fileID: 1150407384}
-  - {fileID: 420732615}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
