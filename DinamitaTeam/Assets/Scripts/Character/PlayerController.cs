@@ -7,9 +7,13 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 public class PlayerController : MonoBehaviour
 {
     public float xVelocity = 5.0f;
+    public GameObject StepsSoundFx;
 
     private Rigidbody2D rigidBody;
     private Animator animator;
+
+    private bool WasWaling = false;
+    private bool IsWalking = false; 
     
     // Start is called before the first frame update
     void Start()
@@ -34,6 +38,7 @@ public class PlayerController : MonoBehaviour
             transform.eulerAngles = new Vector2(0, 0);
             animator.SetBool("Walking",true);
             rigidBody.velocity = translation;
+            IsWalking = true;
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
@@ -41,12 +46,28 @@ public class PlayerController : MonoBehaviour
             transform.eulerAngles = new Vector2(0, 180);
             animator.SetBool("Walking", true);
             rigidBody.velocity = translation;
+            IsWalking = true;
         }
         else
         {
             translation = Vector3.zero;
             animator.SetBool("Walking", false);
             rigidBody.velocity = translation;
+            IsWalking = false;
+        }
+
+        // Sound
+        if(WasWaling == false && IsWalking == true)
+        {
+            Debug.Log("PLAY");
+            WasWaling = true;
+            StepsSoundFx.SendMessage("PlayStepsSounds");
+        }
+        else if(WasWaling == true && IsWalking == false)
+        {
+            Debug.Log("STOP");
+            WasWaling = false;
+            StepsSoundFx.SendMessage("StopStepsSounds");
         }
     }
 }
