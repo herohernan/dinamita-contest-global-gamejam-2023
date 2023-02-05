@@ -326,7 +326,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.062000003, y: 0.11472135}
   m_AnchorMax: {x: 0.94046146, y: 0.9127596}
-  m_AnchoredPosition: {x: -1.500061, y: -1.9999924}
+  m_AnchoredPosition: {x: -1.500061, y: -1.9999886}
   m_SizeDelta: {x: 0.20281982, y: -2.3247986}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &240997354
@@ -349,7 +349,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Mueve las flechas para jugar y la tecla espacio para interactuar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dba70ba0a9e656845b0078ae47c76214, type: 2}
   m_sharedMaterial: {fileID: -1105335241847791419, guid: dba70ba0a9e656845b0078ae47c76214, type: 2}
@@ -376,8 +376,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 11
+  m_fontSizeBase: 11
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 8
