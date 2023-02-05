@@ -14,6 +14,12 @@ public class InteractiveObjController : MonoBehaviour
     private int nextText = 0;
     private bool IsTriggering = false;
 
+    // On trigger Enter
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        DialogTextObj.text = "";
+    }
+
     // On trigger Stay
     private void OnTriggerStay2D(Collider2D other)
     {
