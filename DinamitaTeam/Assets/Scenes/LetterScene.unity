@@ -489,7 +489,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Hello World
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dba70ba0a9e656845b0078ae47c76214, type: 2}
   m_sharedMaterial: {fileID: -1105335241847791419, guid: dba70ba0a9e656845b0078ae47c76214, type: 2}
@@ -949,6 +949,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 951421d4e1edb944cb2f8f925c8278bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LetterTextsList:
+  - "Ya no recuerdo cuantas veces he escrito esta carta\u2026 He pasado horas frente
+    a nuevos papeles en blanco, pensando c\xF3mo podr\xEDa escribirte. Despu\xE9s
+    de lo que pas\xF3, ninguna palabra parec\xEDa ser suficiente\u2026 solo, lo siento.
+    Ambos sabemos que es tarde para las disculpas, que el da\xF1o est\xE1 hecho.\\r\\n\\r\\nCuando
+    te alej\xE9 de casa, contigo se fue mi alma. Todo lo hice por tu bien, puede
+    que jam\xE1s volvamos a ser igual que antes."
+  - "Jorge\u2026 si tengo la suerte de que no hayas quemado esta carta y si est\xE1s
+    leyendo est\xE1s l\xEDneas, significa que ya estoy muerto. El porque de lo que
+    hice lo encontrar\xE1s en la hacienda, que no te enga\xF1e lo que ves, nada es
+    normal, escudri\xF1a y entender\xE1s\u2026 solo desear\xEDa poder volver.\\r\\n\\r\\nAtt:
+    Ram\xF3n Mape, tu abuelo."
   LetterTextObj: {fileID: 874249368}
   nextScene: Level1Scene
 --- !u!1 &2127873553
