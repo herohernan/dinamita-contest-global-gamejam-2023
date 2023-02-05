@@ -651,6 +651,68 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 13.249859}
   m_EdgeRadius: 0
+--- !u!1001 &703186704
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5296125075908344072, guid: 415dd02a7fc2fa24c931d64d932ebfa3, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296125075908344072, guid: 415dd02a7fc2fa24c931d64d932ebfa3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296125075908344072, guid: 415dd02a7fc2fa24c931d64d932ebfa3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296125075908344072, guid: 415dd02a7fc2fa24c931d64d932ebfa3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296125075908344072, guid: 415dd02a7fc2fa24c931d64d932ebfa3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296125075908344072, guid: 415dd02a7fc2fa24c931d64d932ebfa3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296125075908344072, guid: 415dd02a7fc2fa24c931d64d932ebfa3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296125075908344072, guid: 415dd02a7fc2fa24c931d64d932ebfa3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296125075908344072, guid: 415dd02a7fc2fa24c931d64d932ebfa3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296125075908344072, guid: 415dd02a7fc2fa24c931d64d932ebfa3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296125075908344072, guid: 415dd02a7fc2fa24c931d64d932ebfa3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296125075908344073, guid: 415dd02a7fc2fa24c931d64d932ebfa3, type: 3}
+      propertyPath: m_Name
+      value: SoundEffects
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 415dd02a7fc2fa24c931d64d932ebfa3, type: 3}
+--- !u!1 &703186705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5296125076132028932, guid: 415dd02a7fc2fa24c931d64d932ebfa3, type: 3}
+  m_PrefabInstance: {fileID: 703186704}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &937078734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -706,6 +768,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 773693521973914582, guid: 8728611dea46c3745935c9f9d70c88e2, type: 3}
+      propertyPath: StepsSoundFx
+      value: 
+      objectReference: {fileID: 703186705}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8728611dea46c3745935c9f9d70c88e2, type: 3}
 --- !u!4 &937078735 stripped
